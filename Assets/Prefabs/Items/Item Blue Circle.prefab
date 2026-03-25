@@ -10,7 +10,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1373109421631719314, guid: b643352c14f66f94499e84f477078fd9, type: 3}
       propertyPath: m_Name
-      value: Item
+      value: Item Blue Circle
       objectReference: {fileID: 0}
     - target: {fileID: 4166203644461119388, guid: b643352c14f66f94499e84f477078fd9, type: 3}
       propertyPath: m_LocalPosition.x
@@ -51,6 +51,10 @@ PrefabInstance:
     - target: {fileID: 4166203644461119388, guid: b643352c14f66f94499e84f477078fd9, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5522031990924217033, guid: b643352c14f66f94499e84f477078fd9, type: 3}
+      propertyPath: itemType
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 4166203644461119388}
   - component: {fileID: 4861727954857699706}
   - component: {fileID: 5522031990924217033}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Item Base
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -73,7 +73,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44af212087bf6ef46a4ce461ff28561f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Item
+  itemType: 0
   animator: {fileID: 5778823182055817455}
+  touchCollider: {fileID: 0}
 --- !u!1 &4037099825242242149
 GameObject:
   m_ObjectHideFlags: 0
@@ -86,9 +88,9 @@ GameObject:
   - component: {fileID: 3133776638024421857}
   - component: {fileID: 4285360601188148919}
   - component: {fileID: 5778823182055817455}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Visual
-  m_TagString: Untagged
+  m_TagString: Visual
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -236,7 +238,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1249350601959477949}
   - component: {fileID: 7716100231868095132}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Eye
   m_TagString: Untagged
   m_Icon: {fileID: 0}
