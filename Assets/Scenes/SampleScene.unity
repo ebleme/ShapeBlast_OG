@@ -735,7 +735,7 @@ AudioSource:
   m_audioClip: {fileID: 0}
   m_Resource: {fileID: 8300000, guid: 7907c9c4ec1d0094aa05a5a663401684, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.35
+  m_Volume: 0.1
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -1439,6 +1439,22 @@ PrefabInstance:
       propertyPath: spawnInterval
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1780744127156678145, guid: 64139af78903b614d85ad23a1b2ce2b5, type: 3}
+      propertyPath: items.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1780744127156678145, guid: 64139af78903b614d85ad23a1b2ce2b5, type: 3}
+      propertyPath: 'items.Array.data[1]'
+      value: 
+      objectReference: {fileID: 6155827277276151725, guid: cd82424580a3cae409900eac77cf2884, type: 3}
+    - target: {fileID: 1780744127156678145, guid: 64139af78903b614d85ad23a1b2ce2b5, type: 3}
+      propertyPath: 'items.Array.data[2]'
+      value: 
+      objectReference: {fileID: 573873475338253483, guid: 93349bf72f3637e4e8cf12aafaed8b60, type: 3}
+    - target: {fileID: 1780744127156678145, guid: 64139af78903b614d85ad23a1b2ce2b5, type: 3}
+      propertyPath: 'items.Array.data[3]'
+      value: 
+      objectReference: {fileID: 5199580386834798031, guid: a0a7bd05a91866047b902a5393875d72, type: 3}
     - target: {fileID: 4457278239835254153, guid: 64139af78903b614d85ad23a1b2ce2b5, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
