@@ -13,6 +13,7 @@ public class Item : MonoBehaviour
 
     private bool isSelected = false;
     private bool isDead = false;
+    private bool isTouched = false;
     
     public ItemTypes ItemType => itemType;
     public bool IsDead => isDead;
@@ -48,5 +49,21 @@ public class Item : MonoBehaviour
         
         // Destroy after animation
         Destroy(gameObject, 0.5f);
+    }
+    
+    // Item ların birbirine temas ettiğini dokunduğunu algıla
+    // Bu Item üzerindeki collider başka bir collider'a temas ettiğinde çalışır.
+    private void OnCollisionEnter2D(Collision2D other)
+    {
+        if(isTouched)
+            return;
+        
+        Debug.Log("Collision Enter : " + other.gameObject.name);
+        // if (other.gameObject.GetComponent<Item>())
+        if (other.gameObject.CompareTag("Item") || other.gameObject.CompareTag("Floor"))
+        {
+            isTouched = true;
+            FindAnyObjectByType<SoundManager>().PlayTouchSound();
+        }
     }
 }

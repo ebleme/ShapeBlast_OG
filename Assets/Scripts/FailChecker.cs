@@ -13,10 +13,10 @@ public class FailChecker : MonoBehaviour
    {
       var itemsCollided = Physics2D.BoxCastAll(collider.bounds.center, colliderSize, 0,Vector2.zero);
 
-      if (itemsCollided.Length > 0)
-      {
-         Debug.Log("Count: " + itemsCollided.Length);
-      }
+      // if (itemsCollided.Length > 0)
+      // {
+      //    Debug.Log("Count: " + itemsCollided.Length);
+      // }
       
       if (itemsCollided.Length >= maxItemBeforeLose)
       {

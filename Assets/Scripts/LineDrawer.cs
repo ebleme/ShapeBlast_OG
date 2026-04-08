@@ -10,7 +10,9 @@ public class LineDrawer : MonoBehaviour
     [SerializeField] private LayerMask itemLayer;
 
     [SerializeField] private ScoreManager scoreManager;
-    
+
+    [SerializeField] private SoundManager soundManager;
+
 
     /*
      * Çizgi çizme mekaniği
@@ -139,12 +141,13 @@ public class LineDrawer : MonoBehaviour
         if (selectedItems.Count >= 3)
         {
             int comboMultiplier = selectedItems.Count - 2;
-            
+
             int score = selectedItems.Count * comboMultiplier; // 3, 8, 15, 24
 
-            
+
             scoreManager.IncreaseScore(score);
-            
+            soundManager.PlaySuccessSound();
+
             foreach (var item in selectedItems)
             {
                 item.DestroyItem();
